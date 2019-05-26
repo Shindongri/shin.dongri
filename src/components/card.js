@@ -7,7 +7,8 @@ const StyledCard = styled.li`
   list-style-type : none;
   margin-bottom: 28px;
   background-color: #f2f2f2;
-`
+` 
+ 
 
 const Card = ({ children }) => (
   <StyledCard>
