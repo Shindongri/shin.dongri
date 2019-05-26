@@ -8,7 +8,6 @@ const StyledCard = styled.li`
   margin-bottom: 28px;
   background-color: #f2f2f2;
 ` 
- 
 
 const Card = ({ children }) => (
   <StyledCard>
