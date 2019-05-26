@@ -1,20 +1,40 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled, { createGlobalStyle } from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Card from "../components/card"
+
+const GlobalStyle = createGlobalStyle`
+  html,body {
+    font-family: Spoqa Han Sans, Sans-serif;
+    height: 100%;
+  }
+`
+
+const MainSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 128px;
+`
 
 const IndexPage = () => (
   <Layout>
+    <GlobalStyle />
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <MainSection>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </MainSection>
   </Layout>
 )
 
