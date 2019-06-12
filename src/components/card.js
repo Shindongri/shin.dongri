@@ -6,12 +6,31 @@ const StyledCard = styled.li`
   height: 200px;
   list-style-type : none;
   margin-bottom: 28px;
-  background-color: #f2f2f2;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  &:hover {
+    background-color: #f7f7f7;
+    box-shadow: 3px 3px 3px 0 #eaeaea;
+  }
 ` 
+
+const Title = styled.h2`
+  margin: 0;
+`
+
+const SubTitle = styled.p`
+  margin-top: 20px;
+`
+
+const RegDate = styled.small`
+`
 
 const Card = ({ children }) => (
   <StyledCard>
-    { children }
+    <Title>제목</Title>
+    <RegDate>May 10, 2019</RegDate>
+    <SubTitle>부제목 입니다앙</SubTitle>
   </StyledCard>
 )
 

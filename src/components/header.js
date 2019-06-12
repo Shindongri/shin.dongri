@@ -15,17 +15,20 @@ const StyledHeader = styled.header`
 
 const Container = styled.div`
   margin: 0;
-  max-width: 960px;
   padding: 1.45rem 1.0875rem;
 `
 
 const Navigation = styled.nav`
   display: flex;
   justify-content: space-between;
+  width: 100%;
 `
 
 const Menu = styled.a`
-  font-style: italic;
+  font-weight: 500;
+  &:hover {
+    font-weight: 800;
+  }
 `
 
 const Logo = styled.a`
@@ -38,6 +41,9 @@ const StyledLink = styled(Link)`
   font-size: 1.25rem;
   font-weight: 800;
   position: sticky;
+  &:hover {
+    color: #3239ff;
+  }
 ` 
 
 const ContactWrapper = styled.div`
@@ -48,8 +54,12 @@ const ContactWrapper = styled.div`
 
 const Contact = styled.a`
   margin-right: 4px;
+  text-decoration: none;
   &:last-child {
     margin-right: 0;
+  }
+  &:hover {
+    text-decoration: underline;
   }
 `
 const Header = ({ siteTitle }) => (
