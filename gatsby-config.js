@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `shin.dongri 😎✨`,
+    title: `신동리`,
     description: `shin.dongri`,
     author: `@shindongri`,
   },

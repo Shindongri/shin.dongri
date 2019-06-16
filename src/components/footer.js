@@ -6,17 +6,12 @@ const StyledFooter = styled.footer`
   position: sticky;
   height: 70px;
   font-size: 16px;
+  text-align: center;
 `
 
 const Footer = () => (
 <StyledFooter >
-  © {new Date().getFullYear()} made with
-  {` `}
-  <a href="https://www.gatsbyjs.org">Gatsby</a>
-  { ' + ' }
-  <a href="https://www.netlify.com">Netlify</a>
-  { ' + ' }
-  🍷
+  © Copyright Dong-ri, Shin
 </StyledFooter>
 )
 

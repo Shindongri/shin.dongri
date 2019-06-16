@@ -3,14 +3,33 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
+import Me from '../images/me.png'
+
 const StyledHeader = styled.header`
-  background: white;
   margin-bottom: 1.45rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  opacity: 0.9;
+  opacity: 1;
+  z-index: 99;
+`
+
+const WrapSymbol = styled.a`
+  width: 100px;
+  height: 100px;
+`
+
+const Symbol = styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 0.06rem solid #dbdbdb;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 3px 3px rgba(0,0,0,.3);
+  }
 `
 
 const Container = styled.div`
@@ -20,73 +39,97 @@ const Container = styled.div`
 
 const Navigation = styled.nav`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 `
-
-const Menu = styled.a`
-  font-weight: 500;
-  &:hover {
-    font-weight: 800;
-  }
-`
-
 const Logo = styled.a`
+  display: flex;
+  flex-direction: column;
   margin: 0;
 `
 
-const StyledLink = styled(Link)`
+const Title = styled(Link)`
   text-decoration: none;
   color: #212121;
-  font-size: 1.25rem;
-  font-weight: 800;
-  position: sticky;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px auto 0;
   &:hover {
-    color: #3239ff;
+    color: #3d6afe;
   }
 ` 
 
-const ContactWrapper = styled.div`
+const WrapContact = styled.div`
   display: flex;
-  font-size: 12px;
-  font-weight: 300;
+  justify-content: center;
+  margin: 24px 0;
 `
 
-const Contact = styled.a`
-  margin-right: 4px;
-  text-decoration: none;
+const Contact = styled.div`
+  font-size: 1.24rem;
+  margin-right: 14px;
+  cursor: pointer;
   &:last-child {
     margin-right: 0;
   }
   &:hover {
-    text-decoration: underline;
+    color: #3d6afe;
   }
 `
-const Header = ({ siteTitle }) => (
-  <StyledHeader>
-    <Container>
-      <Navigation>
-        <Logo>
-          <StyledLink to="/">
-          {siteTitle}
-          </StyledLink>
-        </Logo>
 
-        <Menu>
-          About
-        </Menu>
-      </Navigation>
-    
-      <ContactWrapper>
-        <Contact href="">linkedin</Contact>
-        <Contact href="">rocketpunch</Contact>        
-        <Contact href="">instagram</Contact>
-        <Contact href="">twitter</Contact>
-        <Contact href="">email</Contact>
-      </ContactWrapper>
-    </Container>
-  </StyledHeader>
-)
+const SubTitle = styled.p`
+  text-align: center;
+  margin: 0 auto;
+  font-size: 14px;
+`
+
+const Header = ({ siteTitle }) => {
+  return (
+    <StyledHeader>
+      <Container>
+        <Navigation>
+          <Logo>
+            <WrapSymbol href="/">
+              <Symbol src={ Me } />
+            </WrapSymbol>
+
+            <Title to="/">
+            { siteTitle }
+            </Title>
+          </Logo>
+
+          <SubTitle>
+            Front-end Engineer
+          </SubTitle>
+        </Navigation>
+
+        <WrapContact>
+          <Contact>
+            <i class="fab fa-github"></i>
+          </Contact>
+
+          <Contact>
+            <i class="fab fa-linkedin"></i>
+          </Contact>
+
+          <Contact>
+            <i class="fab fa-facebook-square"></i>
+          </Contact>
+
+          <Contact>
+            <i class="fab fa-instagram"></i>
+          </Contact>
+
+          <Contact>
+            <i class="far fa-envelope"></i>
+          </Contact>
+        </WrapContact>
+      </Container>
+    </StyledHeader>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
