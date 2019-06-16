@@ -11,7 +11,6 @@ const StyledHeader = styled.header`
   top: 0;
   left: 0;
   right: 0;
-  z-index: 99;
 `
 
 const WrapSymbol = styled.a`
@@ -66,10 +65,11 @@ const WrapContact = styled.div`
   margin: 12px 0;
 `
 
-const Contact = styled.div`
+const Contact = styled.a`
   font-size: 1.24rem;
-  margin-right: 14px;
+  margin-right: 20px;
   cursor: pointer;
+  color: #878787;
   &:last-child {
     margin-right: 0;
   }
@@ -91,7 +91,8 @@ const Description = styled.p`
 `
 
 const Company = styled.a`
-  font-weight: bold;
+  font-weight: 700;
+  color: #000000;
   &:hover {
     text-decoration: none;
   }
@@ -117,31 +118,36 @@ const Header = ({ siteTitle, description }) => {
           </SubTitle>
 
           <Description>
-            "현재 <Company href="https://terafunding.com" target="_blank" >테라펀딩</Company>에서 일하며, 금융과 부동산의 풀지 못했던 문제를 혁신적으로 해결하기 위해 노력하고 있습니다."
+            "현재 <Company href="https://terafunding.com" target="_blank" >테라펀딩</Company>에서 일하며, 금융과 부동산의 풀지 못했던 문제를 혁신적으로 해결하기 위한 서비스를 만들고 있습니다."
           </Description>
         </Navigation>
 
         <WrapContact>
-          <Contact>
+          <Contact href="https://github.com/shindongri">
             <i class="fab fa-github"></i>
           </Contact>
 
-          <Contact>
+          <Contact href="https://www.linkedin.com/">
             <i class="fab fa-linkedin"></i>
           </Contact>
 
-          <Contact>
+          <Contact href="https://www.facebook.com/shindongri89">
             <i class="fab fa-facebook-square"></i>
           </Contact>
 
-          <Contact>
+          <Contact href="https://www.instagram.com/shindongri/?hl=ko">
             <i class="fab fa-instagram"></i>
           </Contact>
 
-          <Contact>
+          <Contact href="mailto:shindongri89@gmail.com">
             <i class="far fa-envelope"></i>
           </Contact>
+
+          <Contact>
+            <i class="fas fa-rss-square"></i>
+          </Contact>
         </WrapContact>
+
       </Container>
     </StyledHeader>
   )
