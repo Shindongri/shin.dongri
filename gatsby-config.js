@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `신동리`,
-    description: `shin.dongri`,
+    description: ``,
     author: `@shindongri`,
   },
   plugins: [

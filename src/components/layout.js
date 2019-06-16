@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: #FAFAFA;
     font-family: Merriweather, Georgia, serif;
+    scroll-behavior: smooth;
   }
 `
 
@@ -35,14 +36,15 @@ const Layout = ({ children }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            title
+            title,
+            description
           }
         }
       }
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
         <Wrapper>
           <main>{children}</main>
         </Wrapper>

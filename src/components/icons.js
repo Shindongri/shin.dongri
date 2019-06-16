@@ -10,7 +10,7 @@ const StyledIcons = styled.div`
   padding: 10px;
   width: ${ 293 * 3 }px;
   height: auto;
-  margin: 280px auto 0;
+  margin: 300px auto 0;
 
   @media (max-width: 768px) {
     padding: 0 auto;
@@ -18,7 +18,7 @@ const StyledIcons = styled.div`
     grid-column-gap: 0;
     grid-row-gap: 10px;
     justify-items: center;
-    margin: 280px auto 0;
+    margin: 300px auto 0;
     width: 100%;
   }
 `
@@ -110,72 +110,6 @@ const Icons = () => (
 
     <WrapIcon>
       <Icon className="devicon-typescript-plain colored" />
-      <StarRate>
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="far fa-star" />
-      </StarRate>
-    </WrapIcon>
-
-    <WrapIcon>
-      <Icon className="devicon-sass-original colored" />
-      <StarRate>
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="far fa-star" />
-        <i class="far fa-star" />
-        <i class="far fa-star" />
-      </StarRate>
-    </WrapIcon>
-
-    <WrapIcon>
-      <Icon className="devicon-webpack-plain-wordmark colored" />
-      <StarRate>
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="far fa-star" />
-        <i class="far fa-star" />
-      </StarRate>
-    </WrapIcon>
-
-    <WrapIcon>
-      <Icon className="devicon-babel-plain colored" />
-      <StarRate>
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="far fa-star" />
-        <i class="far fa-star" />
-      </StarRate>
-    </WrapIcon>
-
-    <WrapIcon>
-      <Icon className="devicon-github-plain-wordmark colored" />
-      <StarRate>
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="far fa-star" />
-        <i class="far fa-star" />
-      </StarRate>
-    </WrapIcon>
-
-    <WrapIcon>
-      <Icon className="devicon-amazonwebservices-plain-wordmark colored" />
-      <StarRate>
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="far fa-star" />
-        <i class="far fa-star" />
-        <i class="far fa-star" />
-      </StarRate>
-    </WrapIcon>
-
-    <WrapIcon>
-      <Icon className="devicon-visualstudio-plain-wordmark colored" />
       <StarRate>
         <i class="fas fa-star" />
         <i class="fas fa-star" />

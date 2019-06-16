@@ -11,7 +11,6 @@ const StyledHeader = styled.header`
   top: 0;
   left: 0;
   right: 0;
-  opacity: 1;
   z-index: 99;
 `
 
@@ -64,7 +63,7 @@ const Title = styled(Link)`
 const WrapContact = styled.div`
   display: flex;
   justify-content: center;
-  margin: 24px 0;
+  margin: 12px 0;
 `
 
 const Contact = styled.div`
@@ -79,13 +78,26 @@ const Contact = styled.div`
   }
 `
 
-const SubTitle = styled.p`
+const SubTitle = styled.h3`
   text-align: center;
   margin: 0 auto;
   font-size: 14px;
 `
 
-const Header = ({ siteTitle }) => {
+const Description = styled.p`
+  font-style: italic;
+  font-size: 12px;
+  margin: 10px auto;
+`
+
+const Company = styled.a`
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+  }
+`
+
+const Header = ({ siteTitle, description }) => {
   return (
     <StyledHeader>
       <Container>
@@ -103,6 +115,10 @@ const Header = ({ siteTitle }) => {
           <SubTitle>
             Front-end Engineer
           </SubTitle>
+
+          <Description>
+            "현재 <Company href="https://terafunding.com" target="_blank" >테라펀딩</Company>에서 일하며, 금융과 부동산의 풀지 못했던 문제를 혁신적으로 해결하기 위해 노력하고 있습니다."
+          </Description>
         </Navigation>
 
         <WrapContact>
