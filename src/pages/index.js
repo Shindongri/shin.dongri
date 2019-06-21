@@ -1,7 +1,6 @@
-import React from "react"
-
-// import { Link } from "gatsby"
+import React, { useEffect } from "react"
 import styled from "styled-components"
+import _ from "lodash"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,10 +9,11 @@ import Icons from "../components/icons"
 
 const MainSection = styled.section`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   width: ${ 293 * 3 }px;
   margin: 0 auto;
+  scroll-behavior: smooth;
+  transition: all 1s;
 
   @media (max-width: 768px) {
     display: flex;
@@ -23,13 +23,23 @@ const MainSection = styled.section`
   }
 `
 
+const IndexPage = () => {
 
+  useEffect(() => {
+    window.addEventListener(`scroll`, _.throttle(onScroll, 300), { passive: false })
 
-const IndexPage = () => (
+    return () => {
+      window.removeEventListener(`scroll`, _.throttle(onScroll, 300), { passive: false })
+    }
+  }, [])
+
+  const onScroll = e => {}
+
+  return (
   <Layout>
     <SEO title="Home" />
     <Icons />
-    <MainSection>
+    <MainSection className="main">
       <Card />
       <Card />
       <Card />
@@ -104,6 +114,7 @@ const IndexPage = () => (
       <Card />
     </MainSection>
   </Layout>
-)
+  )
+}
 
 export default IndexPage

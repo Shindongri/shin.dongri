@@ -24,7 +24,7 @@ const Wrapper = styled.div`
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: #FAFAFA;
+    background-color: rgba(250, 250, 250, 0.8);
     font-family: Merriweather, Georgia, serif;
     scroll-behavior: smooth;
   }

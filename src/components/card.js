@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledCard = styled.li`
-  width: 293px;
+  width: ${ 293 * 3 }px;
   height: 293px;
   list-style-type : none;
   margin-bottom: 28px;
@@ -25,6 +25,11 @@ const StyledCard = styled.li`
 const Title = styled.h2`
   margin: 0;
   font-size: 1.2rem;
+  &:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #3d6afe;
+  }
 `
 
 const SubTitle = styled.p`

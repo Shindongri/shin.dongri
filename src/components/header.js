@@ -11,6 +11,8 @@ const StyledHeader = styled.header`
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
+  background-color: rgba(250, 250, 250, 0.8);
 `
 
 const WrapSymbol = styled.a`
@@ -41,7 +43,7 @@ const Navigation = styled.nav`
   align-items: center;
   width: 100%;
 `
-const Logo = styled.a`
+const Logo = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -67,6 +69,7 @@ const WrapContact = styled.div`
 
 const Contact = styled.a`
   font-size: 1.24rem;
+  font-weight: bold;
   margin-right: 20px;
   cursor: pointer;
   color: #878787;
@@ -82,12 +85,15 @@ const SubTitle = styled.h3`
   text-align: center;
   margin: 0 auto;
   font-size: 14px;
+  color: #adadad;
 `
 
 const Description = styled.p`
-  font-style: italic;
   font-size: 12px;
   margin: 10px auto;
+  line-height: 1.86;
+  text-align: center;
+  padding: 10px;
 `
 
 const Company = styled.a`
@@ -118,33 +124,39 @@ const Header = ({ siteTitle, description }) => {
           </SubTitle>
 
           <Description>
-            "현재 <Company href="https://terafunding.com" target="_blank" >테라펀딩</Company>에서 일하며, 금융과 부동산의 풀지 못했던 문제를 혁신적으로 해결하기 위한 서비스를 만들고 있습니다."
+            현재 <Company href="https://terafunding.com" target="_blank" >테라펀딩</Company>에서 일하며, 금융과 부동산의 풀지 못했던 문제를 혁신적으로 해결하기 위한 서비스를 만들고 있습니다.
+            <br />
+
+            아름다운 인터페이스와 사용자 경험을 제공하는 것을 즐깁니다.
+            <br />
+
+            항상 개발자로서 성장이 최우선의 가치라 여기고, 즐겁게 성장할 수 있는 환경을 선호합니다.
           </Description>
         </Navigation>
 
         <WrapContact>
           <Contact href="https://github.com/shindongri">
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </Contact>
 
           <Contact href="https://www.linkedin.com/">
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
           </Contact>
 
           <Contact href="https://www.facebook.com/shindongri89">
-            <i class="fab fa-facebook-square"></i>
+            <i className="fab fa-facebook-square"></i>
           </Contact>
 
           <Contact href="https://www.instagram.com/shindongri/?hl=ko">
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
           </Contact>
 
           <Contact href="mailto:shindongri89@gmail.com">
-            <i class="far fa-envelope"></i>
+            <i className="far fa-envelope"></i>
           </Contact>
 
           <Contact>
-            <i class="fas fa-rss-square"></i>
+            <i className="fas fa-rss-square"></i>
           </Contact>
         </WrapContact>
 

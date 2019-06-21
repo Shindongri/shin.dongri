@@ -10,7 +10,7 @@ const StyledIcons = styled.div`
   padding: 10px;
   width: ${ 293 * 3 }px;
   height: auto;
-  margin: 300px auto 0;
+  margin: 378px auto 0;
 
   @media (max-width: 768px) {
     padding: 0 auto;
@@ -18,7 +18,7 @@ const StyledIcons = styled.div`
     grid-column-gap: 0;
     grid-row-gap: 10px;
     justify-items: center;
-    margin: 300px auto 0;
+    margin: 400px auto 0;
     width: 100%;
   }
 `
@@ -48,74 +48,74 @@ const StarRate = styled.div`
     transition: opacity .25s ease-in-out .0s;
   }
   font-size: 16px;
-  color: #f7e304;
+  color: ${props => props.color || '#f7e304' };
 `
 
 const Icons = () => (
   <StyledIcons>
     <WrapIcon>
       <Icon className="devicon-javascript-plain colored" />
-      <StarRate>
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="far fa-star" />
+      <StarRate color="#f7e304">
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="far fa-star" />
       </StarRate>
     </WrapIcon>
 
     <WrapIcon>
       <Icon className="devicon-html5-plain-wordmark colored" />
-      <StarRate>
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="far fa-star" />
-        <i class="far fa-star" />
+      <StarRate color="#e44c27">
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="far fa-star" />
+        <i className="far fa-star" />
       </StarRate>
     </WrapIcon>
 
     <WrapIcon>
       <Icon className="devicon-css3-plain-wordmark colored" />
-      <StarRate>
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="far fa-star" />
-        <i class="far fa-star" />
+      <StarRate color="#3D8FC6">
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="far fa-star" />
+        <i className="far fa-star" />
       </StarRate>
     </WrapIcon>
 
     <WrapIcon>
       <Icon className="devicon-react-original-wordmark colored" />
-      <StarRate>
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
+      <StarRate color="#62DAFB">
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
       </StarRate>
     </WrapIcon>
 
     <WrapIcon>
       <Icon className="devicon-vuejs-plain-wordmark colored" />
-      <StarRate>
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="far fa-star" />
-        <i class="far fa-star" />
+      <StarRate color="#41B883">
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="far fa-star" />
+        <i className="far fa-star" />
       </StarRate>
     </WrapIcon>
 
     <WrapIcon>
       <Icon className="devicon-typescript-plain colored" />
-      <StarRate>
-        <i class="fas fa-star" />
-        <i class="fas fa-star" />
-        <i class="far fa-star" />
-        <i class="far fa-star" />
-        <i class="far fa-star" />
+      <StarRate color="#007ACC">
+        <i className="fas fa-star" />
+        <i className="fas fa-star" />
+        <i className="far fa-star" />
+        <i className="far fa-star" />
+        <i className="far fa-star" />
       </StarRate>
     </WrapIcon>
   </StyledIcons>
