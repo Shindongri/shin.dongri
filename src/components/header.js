@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgba(250, 250, 250, 0.8);
+  background-color: rgba(250, 250, 250, 0.9);
 `
 
 const WrapSymbol = styled.a`
@@ -88,12 +88,15 @@ const SubTitle = styled.h3`
   color: #adadad;
 `
 
-const Description = styled.p`
+const Description = styled.ul`
   font-size: 12px;
   margin: 10px auto;
-  line-height: 1.86;
-  text-align: center;
+  line-height: 1.2;
   padding: 10px;
+  text-align: center;
+
+  list-style: none;
+  color: #565656;
 `
 
 const Company = styled.a`
@@ -124,13 +127,17 @@ const Header = ({ siteTitle, description }) => {
           </SubTitle>
 
           <Description>
-            현재 <Company href="https://terafunding.com" target="_blank" >테라펀딩</Company>에서 일하며, 금융과 부동산의 풀지 못했던 문제를 혁신적으로 해결하기 위한 서비스를 만들고 있습니다.
-            <br />
+            <li>
+              현재 <Company href="https://terafunding.com" target="_blank" >테라펀딩</Company>에서 일하며, 금융과 부동산의 풀지 못했던 문제를 혁신적으로 해결하기 위한 서비스를 만들고 있습니다.
+            </li>
 
-            아름다운 인터페이스와 사용자 경험을 제공하는 것을 즐깁니다.
-            <br />
+            <li>
+              아름다운 인터페이스와 사용자 경험을 제공하는 것을 즐깁니다.
+            </li>
 
-            항상 개발자로서 성장이 최우선의 가치라 여기고, 즐겁게 성장할 수 있는 환경을 선호합니다.
+            <li>
+              항상 개발자로서 성장이 최우선의 가치라 여기고, 즐겁게 성장할 수 있는 환경을 선호합니다.
+            </li>
           </Description>
         </Navigation>
 

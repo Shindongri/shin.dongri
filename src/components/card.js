@@ -3,11 +3,11 @@ import styled from "styled-components"
 
 const StyledCard = styled.li`
   width: ${ 293 * 3 }px;
-  height: 293px;
+  height: 200px;
   list-style-type : none;
   margin-bottom: 28px;
   cursor: pointer;
-  padding: 20px;
+  padding: 28px;
   overflow: scroll;
   ::-webkit-scrollbar { 
     display: none; 
