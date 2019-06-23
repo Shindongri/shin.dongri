@@ -4,7 +4,6 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Icons from "../components/icons"
-import Contents from "../components/contents"
 import { graphql } from "graphql";
 
 const MainSection = styled.section`
@@ -22,9 +21,7 @@ const MainSection = styled.section`
     width: 100%;
   }
 `
-  export default ({ data }) => {
-    console.log( data )
-
+  export default () => {
     return (
     <Layout>
       <SEO title="Home" />

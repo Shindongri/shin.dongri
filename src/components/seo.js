@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import $ from "jquery"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -71,7 +72,25 @@ function SEO({ description, lang, meta, title }) {
     >
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'></link>
-    <script src="https://kit.fontawesome.com/e5960a9f50.js"></script>
+
+    <script src="//identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="//kit.fontawesome.com/e5960a9f50.js"></script>
+    <script src="//unpkg.com/netlify-auth-providers"></script>
+    <script>
+      $(function() {
+        $("#login").on("click", function(e) {
+          e.preventDefault();
+          
+          var authenticator = new netlify.default ({});
+          
+          authenticator.authenticate({provider:"github", scope: "user"}, function(err, data) {
+            if (err) {
+              return $("#output").text("Error Authenticating with GitHub: " + err);
+            }
+          });
+      })
+    });
+    </script>
     </Helmet>
   )
 }
