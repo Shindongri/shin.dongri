@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 const GlobalStyle = createGlobalStyle`
   body {
     background-color: rgba(250, 250, 250, 0.8);
-    font-family: Merriweather, Georgia, serif;
+    font-family: Spoqa Han Sans, Sans-serif, serif;
     scroll-behavior: smooth;
   }
 `

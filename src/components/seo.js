@@ -70,7 +70,7 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     >
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'></link>
     <script src="https://kit.fontawesome.com/e5960a9f50.js"></script>
     </Helmet>
   )

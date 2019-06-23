@@ -88,16 +88,19 @@ const SubTitle = styled.h3`
   color: #adadad;
 `
 
-const Description = styled.ul`
+const WrapDesc = styled.ul`
   font-size: 12px;
   margin: 10px auto;
-  line-height: 1.2;
   padding: 10px;
   text-align: center;
-  line-height: 0.8;
+  line-height: 1.2;
 
   list-style: none;
   color: #565656;
+`
+
+const Desc = styled.li`
+  line-height: 1.2;
 `
 
 const Company = styled.a`
@@ -127,19 +130,19 @@ const Header = ({ siteTitle, description }) => {
             Front-end Engineer
           </SubTitle>
 
-          <Description>
-            <li>
+          <WrapDesc>
+            <Desc>
               현재 <Company href="https://terafunding.com" target="_blank" >테라펀딩</Company>에서 일하며, 금융과 부동산의 풀지 못했던 문제를 혁신적으로 해결하기 위한 서비스를 만들고 있습니다.
-            </li>
+            </Desc>
 
-            <li>
+            <Desc>
               아름다운 인터페이스와 사용자 경험을 제공하는 것을 즐깁니다.
-            </li>
+            </Desc>
 
-            <li>
+            <Desc>
               항상 개발자로서 성장이 최우선의 가치라 여기고, 즐겁게 성장할 수 있는 환경을 선호합니다.
-            </li>
-          </Description>
+            </Desc>
+          </WrapDesc>
         </Navigation>
 
         <WrapContact>
