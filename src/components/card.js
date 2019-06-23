@@ -28,7 +28,7 @@ const Title = styled.h2`
   &:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: #3d6afe;
+    color: #2A52BE;
   }
 `
 
@@ -37,14 +37,14 @@ const SubTitle = styled.p`
   font-size: 0.9rem;
 `
 
-const RegDate = styled.small`
+const Created = styled.small`
 `
 
-const Card = ({ children }) => (
+const Card = ({ title, created, subtitle }) => (
   <StyledCard>
-    <Title>제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</Title>
-    <RegDate>May 10, 2019</RegDate>
-    <SubTitle>부제목 입니다앙부제목 입니다앙부제목 입니다앙부제목 입니다앙부제목 입니다앙부제목 입니다앙부제목 입니다앙부제목 입니다앙부제목 입니다앙</SubTitle>
+    <Title>{ title }</Title>
+    <Created>{ created }</Created>
+    <SubTitle>{ subtitle }</SubTitle>
   </StyledCard>
 )
 

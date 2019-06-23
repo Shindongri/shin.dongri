@@ -105,7 +105,7 @@ const Desc = styled.li`
 
 const Company = styled.a`
   font-weight: 700;
-  color: #000000;
+  color: #2A52BE;
   &:hover {
     text-decoration: none;
   }
@@ -164,10 +164,6 @@ const Header = ({ siteTitle, description }) => {
 
           <Contact href="mailto:shindongri89@gmail.com">
             <i className="far fa-envelope"></i>
-          </Contact>
-
-          <Contact>
-            <i className="fas fa-rss-square"></i>
           </Contact>
         </WrapContact>
 

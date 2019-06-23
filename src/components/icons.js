@@ -33,7 +33,7 @@ const WrapIcon = styled.div`
 `
 
 const Icon = styled.i`
-  font-size: 5rem;
+  font-size: 4.3rem;
   margin: 0;
   width: 100%;
 `
@@ -47,7 +47,8 @@ const StarRate = styled.div`
     -webkit-transition: opacity .25s ease-in-out .0s;
     transition: opacity .25s ease-in-out .0s;
   }
-  font-size: 16px;
+  text-align: center;
+  font-size: 14px;
   color: ${props => props.color || '#f7e304' };
 `
 

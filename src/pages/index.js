@@ -1,11 +1,11 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
-import _ from "lodash"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Card from "../components/card"
 import Icons from "../components/icons"
+import Contents from "../components/contents"
+import { graphql } from "graphql";
 
 const MainSection = styled.section`
   display: grid;
@@ -22,99 +22,27 @@ const MainSection = styled.section`
     width: 100%;
   }
 `
+  export default ({ data }) => {
+    console.log( data )
 
-const IndexPage = () => {
+    return (
+    <Layout>
+      <SEO title="Home" />
+      <Icons />
+      <MainSection className="main">
+      </MainSection>
+    </Layout>
+    )
+  }
 
-  useEffect(() => {
-    window.addEventListener(`scroll`, _.throttle(onScroll, 300), { passive: false })
-
-    return () => {
-      window.removeEventListener(`scroll`, _.throttle(onScroll, 300), { passive: false })
+  export const pageQuery = () => graphql`
+  {
+    allFile {
+      edges {
+        node {
+          id
+        }
+      }
     }
-  }, [])
-
-  const onScroll = e => {}
-
-  return (
-  <Layout>
-    <SEO title="Home" />
-    <Icons />
-    <MainSection className="main">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </MainSection>
-  </Layout>
-  )
-}
-
-export default IndexPage
+  }  
+  `
