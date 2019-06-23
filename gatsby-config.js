@@ -3,6 +3,7 @@ module.exports = {
     title: `신동리`,
     description: ``,
     author: `@shindongri`,
+    siteUrl: `https://shindongri.dev`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
