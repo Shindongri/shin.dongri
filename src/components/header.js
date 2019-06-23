@@ -94,6 +94,7 @@ const Description = styled.ul`
   line-height: 1.2;
   padding: 10px;
   text-align: center;
+  line-height: 0.8;
 
   list-style: none;
   color: #565656;
