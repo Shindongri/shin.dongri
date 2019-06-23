@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import $ from "jquery"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -76,21 +75,6 @@ function SEO({ description, lang, meta, title }) {
     <script src="//identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="//kit.fontawesome.com/e5960a9f50.js"></script>
     <script src="//unpkg.com/netlify-auth-providers"></script>
-    <script>
-      $(function() {
-        $("#login").on("click", function(e) {
-          e.preventDefault();
-          
-          var authenticator = new netlify.default ({});
-          
-          authenticator.authenticate({provider:"github", scope: "user"}, function(err, data) {
-            if (err) {
-              return $("#output").text("Error Authenticating with GitHub: " + err);
-            }
-          });
-      })
-    });
-    </script>
     </Helmet>
   )
 }
