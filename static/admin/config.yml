@@ -1,6 +1,6 @@
 backend:
-  name: blog-back
-  branch: master
+  name: github
+  repo: shindongri/shin.dongri
 
 media_folder: static/img
 public_folder: /img
