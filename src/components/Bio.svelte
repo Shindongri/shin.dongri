@@ -19,11 +19,15 @@
 </style>
 
 <div>
-  <img src="profile-pic.png" alt="Maxi Ferreira">
+  <img src="me2.png" alt="Dong-ri, Shin">
   <p>
-    Hi, I'm <strong>Maxi</strong>. I'm a software engineer and data scientist from Córdoba, Argentina.
-    You can follow me on <a href="https://www.twitter.com/Charca" target="_blank">Twitter</a>,
-    see some of my work on <a href="https://www.github.com/Charca" target="_blank">GitHub</a>,
-    or read more about me on <a href="https://www.maxiferreira.com" target="_blank">my website</a>.
+    Hi, I'm <strong>Dong-ri</strong>.
+    <br /> I'm a web front-end engineer from Seoul, Korea.
+    <br />
+    <a href="https://shindongri.dev/resume" target="_blank">resume</a>&nbsp;/
+    <a href="https://www.linkedin.com/in/shindongri/" target="_blank">linkedin</a>&nbsp;/
+    <a href="https://twitter.com/JUpshyX4wTl5hqw" target="_blank">twitter</a>&nbsp;/
+    <a href="https://www.facebook.com/shindongri89" target="_blank">facebook</a>&nbsp;/
+    <a href="https://www.instagram.com/shindongri/" target="_blank">instagram</a>
   </p>
 </div>

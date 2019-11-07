@@ -19,11 +19,9 @@
     margin: 2em 0;
     text-align: center;
   }
-
   .home-copy {
     flex: 1;
   }
-
   h1 {
     font-weight: 700;
     margin-bottom: 0.5em;
@@ -32,6 +30,9 @@
   .post-item-footer {
     font-family: Rubik, sans-serif;
     font-weight: 700;
+  }
+  h3 {
+    font-family: Merriweather, sans-serif;
   }
   .post-item-date {
     color: #AAA;
@@ -50,17 +51,14 @@
     margin: 0 1em;
     text-align: center;
   }
-
   figcaption {
     font-size: .8em;
     font-style: italic;
   }
-
   img {
     width: 100%;
-    max-width: 400px;
+    max-width: 200px;
   }
-
   @media (max-width: 1020px) {
     p {
       font-size: 1.2em;
@@ -90,8 +88,11 @@
 
 <div class="home-container">
   <div class="home-copy">
-    <h6>Welcome to your new Sapper Blog</h6>
-    <p>Check out the docs on <a href="https://github.com/Shindongri" target="_blank">GitHub</a> to get started.</p>
+    <img src="avatar.png" alt="It's also me" />
+    <p>Hi, I'm</p>
+    <h3>Dong-ri, Shin</h3>
+    <p>I'm a web front-end engineer based in Seoul, Korea.</p>
+    <p><a href="https://github.com/Shindongri" target="_blank">GitHub</a></p>
   </div>
 </div>
 
