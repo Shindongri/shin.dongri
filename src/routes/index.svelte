@@ -45,7 +45,11 @@
   }
   p {
     font-size: 1.4em;
-    line-height: 1.5;
+    line-height: 1.85em;
+    margin: 0;
+  }
+  p:last-child {
+    margin-top: 40px;
   }
   figure {
     margin: 0 1em;
