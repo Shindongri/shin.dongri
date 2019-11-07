@@ -4,16 +4,17 @@
     margin: -3em -7em 2em 2em;
     max-width: 400px;
   }
-
   figure img {
     border-radius: 8px;
   }
-
   @media (max-width: 1020px) {
     figure {
       float: none;
       margin: 0 auto 2em;
     }
+  }
+  p {
+    font-family: Avenir Next,Spoqa Han Sans,spoqahansans,Apple SD Gothic Neo,Nanum Barun Gothic,Nanum Gothic,Verdana,Arial,Malgun Gothic,Dotum,sans-serif;
   }
 </style>
 
@@ -22,15 +23,46 @@
 </svelte:head>
 
 <div class="container">
-  <h1>About</h1>
+  <h3>About</h3>
   <figure>
-    <img src='rsz_florian-klauer-489-unsplash.jpg' alt='Image of a vintage typewriter.'>
-    <figcaption>Photo by <a href="https://unsplash.com/@florianklauer" target="_blank">Florian Klauer</a> on Unsplash</figcaption>
+    <img src='me.png' alt="It's me">
+    <figcaption>
+      <a href="https://shindongri.dev/resume" target="_blank">resume</a>&nbsp;/
+      <a href="https://www.linkedin.com/in/shindongri/" target="_blank">linkedin</a>&nbsp;/
+      <a href="https://twitter.com/JUpshyX4wTl5hqw" target="_blank">twitter</a>&nbsp;/
+      <a href="https://www.facebook.com/shindongri89" target="_blank">facebook</a>&nbsp;/
+      <a href="https://www.instagram.com/shindongri/" target="_blank">instagram</a>
+    </figcaption>
   </figure>
-  <p>Text placeholder via <a href="https://jeffsum.com/" target="_blank">Jeffsum</a>.</p>
-  <p>So you two dig up, dig up dinosaurs? What do they got in there? King Kong? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard! Life finds a way. God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.</p>
-  <p>You really think you can fly that thing? You know what? It is beets. I've crashed into a beet truck. Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
-  <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Hey, take a look at the earthlings. Goodbye! I was part of something special. Just my luck, no ice. You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
-  <p>Jaguar shark! So tell me - does it really exist? This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, without the oops! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
-  <p>Yes, Yes, without the oops! Do you have any idea how long it takes those cups to decompose. They're using our own satellites against us. And the clock is ticking. Do you have any idea how long it takes those cups to decompose. My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
+  <p>안녕하세요! 신동리 입니다. 🤓</p>
+  <h6>work</h6>
+  <p>현재 핀테크 기업인 <a href="https://terafunding.com" target="_blank">테라펀딩</a>에서
+    <br />
+    Web Front-end Engineer 로
+    <br />
+    근무하고 있습니다.
+  </p>
+  <p>
+    항상 아름다운 인터페이스와 사용자 경험을 제공하기 위해 고민하고, 개발자로서 성장이 최우선의 가치라 여기고 있습니다.
+  </p>
+  <h6>worth</h6>
+  <p>
+    <i>"느끼는 것이 우선이기에 사물의 논리에 메인 자들은 절대로 오롯이 입맞춤하지 못하리라."</i>
+  </p>
+  <p>
+    E.E.Cummings 시의 한 구절을 삶의 모토로 삼고 있습니다.
+    <br />매사에 새로운 시도를 두려워하지 않고, 호기심을 끝까지 잃지 않는 것이 목표 입니다.
+  </p>
+  <h6>interest</h6>
+  <p>
+    여행이 주는 새로운 영감을 좋아합니다.
+    <br />책, 영화는 일상생활에 스밀 수 있는 여행이라고 생각하며,
+    <br />그 중에서도 영화의 매체적 특성을 좋아합니다.
+  </p>
+  <p>
+    예술과 건축을 동경합니다. 개인적으로 건축은 예술과 공학의 이상적인 접점이라고 생각하고, 소프트웨어도 이와 닮아 있다고 생각합니다.
+  </p>
+  <p>
+    술을 좋아합니다. 요즘은 특히 <a href="https://www.vivino.com/users/dongri.shin/wines" target="_blank">네추럴 와인</a> 페어링에 관심을 가지고 있습니다. 🍷
+  </p>
 </div>

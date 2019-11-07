@@ -46,7 +46,7 @@
 
   <footer>
     <span>
-      &copy; {new Date().getFullYear()} Dong-ri.
+      &copy; {new Date().getFullYear()} Dong-ri 🍷.
       Powered by <a href="https://sapper.svelte.dev" target="_blank">Sapper</a>.
     </span>
   </footer>
