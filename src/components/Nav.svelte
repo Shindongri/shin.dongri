@@ -12,7 +12,6 @@
     justify-content: flex-end;
     text-transform: uppercase;
   }
-
   a {
     color: inherit;
     text-decoration: none;
@@ -21,11 +20,9 @@
     position: relative;
     margin-left: 20px;
   }
-
   a:not(.selected) {
     opacity: 0.7;
   }
-
   a::before {
     content: '';
     position: absolute;
@@ -37,19 +34,16 @@
     background: #AAA;
     transform: scaleX(0);
   }
-
   a:hover::before,
   .selected::before {
     transform: scaleX(1);
   }
-
   .selected::before {
     background: #3d6afe;
   }
 </style>
 
 <nav>
-  <a class='{segment === undefined ? "selected" : ""}' href='.'>home</a>
+  <a class='{segment === undefined ? "selected" : ""}' href=''>home</a>
   <a class='{segment === "about" ? "selected" : ""}' href='about'>about</a>
-  <a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a>
 </nav>

@@ -11,6 +11,7 @@
     min-height: 100%;
     min-height: 100vh;
   }
+
   main {
     flex: 1;
     position: relative;
@@ -23,6 +24,7 @@
     display: flex;
     flex-direction: column;
   }
+
   footer {
     color: #AAA;
     font-size: 1em;
@@ -44,7 +46,7 @@
 
   <footer>
     <span>
-      &copy; {new Date().getFullYear()} Shindongri.
+      &copy; {new Date().getFullYear()} Dong-ri.
       Powered by <a href="https://sapper.svelte.dev" target="_blank">Sapper</a>.
     </span>
   </footer>

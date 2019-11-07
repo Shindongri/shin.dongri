@@ -60,7 +60,7 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"].language-css > code, pre[class*="language-"].language-sass > code, pre[class*="language-"].language-scss > code {
-	color: #fd9170;
+	color: #3d6afe;
 }
 
 [class*="language-"] .namespace {
@@ -159,7 +159,7 @@ pre[class*="language-"].language-css > code, pre[class*="language-"].language-sa
 }
 
 .token.number {
-	color: #fd9170;
+	color: #3d6afe;
 }
 
 .token.operator {
@@ -191,7 +191,7 @@ pre[class*="language-"].language-css > code, pre[class*="language-"].language-sa
 }
 
 .token.selector {
-	color: #f07178;
+	color: #3d6afe;
 }
 
 .token.string {
@@ -203,17 +203,17 @@ pre[class*="language-"].language-css > code, pre[class*="language-"].language-sa
 }
 
 .token.tag {
-	color: #f07178;
+	color: #3d6afe;
 }
 
 .token.unit {
-	color: #f07178;
+	color: #3d6afe;
 }
 
 .token.url {
-	color: #fd9170;
+	color: #3d6afe;
 }
 
 .token.variable {
-	color: #f07178;
+	color: #3d6afe;
 }

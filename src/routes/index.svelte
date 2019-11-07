@@ -1,3 +1,15 @@
+<script context="module">
+  export function preload({ params, query }) {
+    return this.fetch(`blog.json`).then(r => r.json()).then(posts => {
+      return { posts };
+    });
+  }
+</script>
+
+<script>
+  export let posts;
+</script>
+
 <style>
   .home-container {
     align-items: center;
@@ -5,7 +17,7 @@
     flex: 1;
     justify-content: center;
     margin: 2em 0;
-    min-height: 400px;
+    text-align: center;
   }
 
   .home-copy {
@@ -16,12 +28,24 @@
     font-weight: 700;
     margin-bottom: 0.5em;
   }
-
+  h2,
+  .post-item-footer {
+    font-family: Rubik, sans-serif;
+    font-weight: 700;
+  }
+  .post-item-date {
+    color: #AAA;
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 16px;
+  }
+  hr {
+    margin: 60px auto;
+  }
   p {
     font-size: 1.4em;
     line-height: 1.5;
   }
-
   figure {
     margin: 0 1em;
     text-align: center;
@@ -66,12 +90,24 @@
 
 <div class="home-container">
   <div class="home-copy">
-    <h1>Welcome to your new Sapper Blog</h1>
+    <h6>Welcome to your new Sapper Blog</h6>
     <p>Check out the docs on <a href="https://www.github.com/Charca/sapper-blog-template" target="_blank">GitHub</a> to get started.</p>
   </div>
+</div>
 
-  <figure>
-    <img alt='Person typing on laptop' src='undraw-illustration.svg'>
-    <figcaption>Illustration thanks to <a href="https://undraw.co" target="_blank">Undraw</a></figcaption>
-  </figure>
+<div class="container">
+  {#each posts as post, index}
+    {#if index}
+      <hr />
+    {/if}
+    <div class="post-item">
+      <h2>
+        <a rel='prefetch' href='blog/{post.slug}'>{post.title}</a>
+      </h2>
+      <p>{post.excerpt}</p>
+      <div class="post-item-footer">
+        <span class="post-item-date">— {post.printDate}</span>
+      </div>
+    </div>
+  {/each}
 </div>
