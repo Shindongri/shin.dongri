@@ -1,6 +1,6 @@
 {
-  "name": "Dev. Shindongri",
-  "description": "Dev. Shindongri",
+  "name": "shindongri",
+  "description": "Dev Log",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
