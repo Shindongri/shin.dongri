@@ -28,10 +28,10 @@
 </svelte:head>
 
 <section class="resume">
-    <h1>Dong-ri, Shin</h1>
-    <h2>
+    <h2>Dong-ri, Shin</h2>
+    <h6>
         Web Front-end Engineer based in Seoul, Korea.
-    </h2>
+    </h6>
     <address>
         <a href="mailto: shindongri89@gmail.com">shindongri89@gmail.com</a>
         <a href="https://github.com/Shindongri">github.com/Shindongri</a>
