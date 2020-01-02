@@ -37,6 +37,7 @@ renderer.code = (code, language) => {
 
 marked.setOptions({ renderer })
 
+
 const posts = fs.readdirSync(POSTS_DIR)
   .filter(fileName => /\.md$/.test(fileName))
   .map(fileName => {
