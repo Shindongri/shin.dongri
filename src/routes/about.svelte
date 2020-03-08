@@ -63,6 +63,6 @@
     예술과 건축을 동경합니다. 개인적으로 건축은 예술과 공학의 이상적인 접점이라고 생각하고, 소프트웨어도 이와 닮아 있다고 생각합니다.
   </p>
   <p>
-    술을 좋아합니다. 요즘은 특히 <a href="https://www.vivino.com/users/dongri.shin/wines" target="_blank">네추럴 와인</a> 페어링에 관심을 가지고 있습니다. 🍷
+    마지막으로 술을 좋아합니다. 요즘은 특히 <a href="https://www.vivino.com/users/dongri.shin/wines" target="_blank">Natural Wine</a> 에 관심을 가지고 있습니다. 🍷
   </p>
 </div>
