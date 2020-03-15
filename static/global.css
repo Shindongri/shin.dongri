@@ -4,21 +4,21 @@
 
 body {
   margin: 0;
-  font-family: Merriweather, serif;
+  font-family: Avenir Next,Spoqa Han Sans,spoqahansans,Apple SD Gothic Neo,Nanum Barun Gothic,Nanum Gothic,Verdana,Arial,Malgun Gothic,Dotum,sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #36393b;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Rubik, sans-serif;
+  font-family: Avenir Next,Spoqa Han Sans,spoqahansans,Apple SD Gothic Neo,Nanum Barun Gothic,Nanum Gothic,Verdana,Arial,Malgun Gothic,Dotum,sans-serif;
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 0.5em 0;
 }
 
 h1 {
-  font-family: Merriweather, serif;
+  font-family: Avenir Next,Spoqa Han Sans,spoqahansans,Apple SD Gothic Neo,Nanum Barun Gothic,Nanum Gothic,Verdana,Arial,Malgun Gothic,Dotum,sans-serif;
   font-size: 4em;
   margin: 0 0 1em 0;
 }
