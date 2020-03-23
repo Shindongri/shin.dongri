@@ -166,7 +166,7 @@
     </article>
 
   <hr />
-  
+
   <article>
     <h2>Certificate</h2>
     <ul>
