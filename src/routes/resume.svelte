@@ -27,7 +27,7 @@
     <title>Resume</title>
 </svelte:head>
 
-<section class="resume">
+<section class="container">
     <h2>Dong-ri, Shin</h2>
     <h6>
         Web Front-end Engineer based in Seoul, Korea.
@@ -42,16 +42,19 @@
         <h2>Skills</h2>
         <ul>
             <li>
-                Languages: HTML, CSS, Javascript, Typescript, SCSS
+              <b>Languages</b>: HTML, CSS, Javascript, Typescript, Pug, Sass, SCSS
             </li>
             <li>
-                Web Front-end Skill Set: React.js, Vue.js, Nuxt.js, Next.js, Webpack, Babel
+                <b>Web Front-end Skill Set</b>: React, Vue, Nuxt, Next, Webpack, Babel
             </li>
             <li>
-                Server-Side: node.js, express
+                <b>Server-Side</b>: Node.js, Express, Sequelize, Mongoose
             </li>
             <li>
-                Cloud: AWS EC2 / lambda / RDS / Cloud-Front / S3
+                <b>Cloud</b>: AWS EC2 / lambda / RDS / Cloud-Front / S3 / Code Pipeline / Code Build
+            </li>
+            <li>
+              <b>Etc</b> : Github Actions CI / CD
             </li>
         </ul>
     </article>
@@ -61,32 +64,90 @@
     <article>
         <h2>Experience</h2>
         <p>
-            Web Front-end Engineer /
-            <a href="https://terafunding.com">Tera Funding</a>
+            <b>Web Front-end Engineer /
+              <a href="https://terafunding.com">Tera Funding</a>
+            </b>
         </p>
         <time datetime="2019-02-28">Feb, 2019</time>
         <span>~</span>
-        <ul>
-            <li>Desktop Web, Mobile Web 전반적인 개발에 참여</li>
-            <li>vue.js, nuxt.js 프레임워크 사용</li>
-            <li>Typescript, Pug, Sass 등의 전처리기 사용</li>
-            <li>Zeplin, storybook 을 활용하여 디자이너와 협업</li>
-            <li>git flow 전략을 사용한 버전 관리 및 코드 리뷰</li>
-            <li>netlify, aws code pipeline, code build 등을 사용하여 CI/CD 구성</li>
-        </ul>
 
-        <p>Web Developer /
+      <ul>
+        <li>
+          <b>PC / Mobile Web Maintenance</b>
+          <ul>
+            <li>PC / MW 유지보수성 업무 대응</li>
+          </ul>
+        </li>
+
+        <li>
+          <b>Toss, SSG Pay 등 외부 채널 연동</b>
+          <ul>
+            <li>
+              Javascript, jQuery
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <b>대출 플랫폼 웹 사이트 구축 (PC)</b>
+          <small>
+            : 차주를 위한 대고객 대출 플랫폼 (<a href="https://loan.terafunding.com/">https://loan.terafunding.com/</a>)
+          </small>
+          <ul>
+            <li>Nuxt(MPA) + Typescript</li>
+            <li>Global State Machine : Vuex</li>
+            <li>Zeplin, Storybook 을 활용한 디자이너와의 협업</li>
+            <li>Git Flow 방식의 코드 리뷰 진행</li>
+            <li>CSS Pre-processor : Sass, Scss</li>
+            <li>BEM (Block Element Modifier) Naming Rule 도입</li>
+            <li>Template Engine : Pug</li>
+            <li>CI / CD : Github Actions</li>
+          </ul>
+        </li>
+
+        <li>
+          <b>투자 플랫폼 웹 사이트 구축 (PC)</b>
+          <small>
+            : 부동산 P2P 투자자를 위한 대고객 투자 플랫폼 (<a href="https://terafunding.com/">https://terafunding.com/</a>)
+          </small>
+          <ul>
+            <li>Nuxt(MPA)</li>
+            <li>Global State Machine : Vuex</li>
+            <li>Git Flow 방식의 코드 리뷰 진행</li>
+            <li>Zeplin, Storybook 을 활용한 디자이너와의 협업</li>
+            <li>CSS Pre-processor : Sass, Scss</li>
+            <li>BEM (Block Element Modifier) Naming Rule 도입</li>
+            <li>Template Engine : Pug</li>
+            <li>CI / CD : AWS Code-Build, Code Pipeline</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>
+          <b>
+            Web Developer /
             <a href="https://www.i-on.net/index.html">I-ON</a>
+          </b>
         </p>
         <time datetime="2016-12-19">Dec, 2016</time>
         <span>~</span>
         <time datetime="2019-02-28">Feb, 2019</time>
         <ul>
-            <li>react.js, next.js 사용한 CMS(Contents Managament System) 개발</li>
-            <li>Jira, Confluence, Invision, Slack 등 협업 툴 사용</li>
+          <li>
+            <b>CMS(Contents Managament System) 개발</b>
+          </li>
+          <ul>
+            <li>React(SPA), Next(MPA)</li>
+            <li>Global State Machine : Redux, MobX</li>
+            <li>Middleware : Redux Thunk</li>
+            <li>UI Framework : Ant Design</li>
+            <li>CI : Jenkins</li>
+          </ul>
         </ul>
 
-        <p>QA / Entrix</p>
+        <p>
+          <b>QA / Entrix</b>
+        </p>
         <time datetime="2016-01-28 09:00">Jan, 2016</time>
         <span>~</span>
         <time datetime="2016-12">Dec, 2016</time>
@@ -104,6 +165,20 @@
         </p>
     </article>
 
+  <hr />
+  
+  <article>
+    <h2>Certificate</h2>
+    <ul>
+      <li>
+        <p>
+          정보 처리 기사
+        </p>
+        <time>May, 2016</time>
+      </li>
+    </ul>
+  </article>
+
     <hr />
 
     <article>
@@ -114,51 +189,30 @@
                 <time>Sep, 2018</time>
                 <span>~</span>
                 <time>Feb, 2019</time>
-                <p>
-                    - next.js <br />
-                    - redux <br />
-                    - ant.design
-                </p>
             </li>
             <li>
                 <p>소상인들의 웹사이트 제작 서비스 - Just10 ( Saas )</p>
                 <time>June, 2018</time>
                 <span>~</span>
                 <time>Sep, 2018</time>
-                <p>
-                    - nuxt.js <br />
-                    - next.js
-                </p>
             </li>
             <li>
                 <p>CJ Digital Music Mwave 시스템 구축</p>
                 <time>Sep, 2017</time>
                 <span>~</span>
                 <time>June, 2018</time>
-                <p>
-                    - react.js <br />
-                    - redux
-                </p>
             </li>
             <li>
                 <p>SBS 방송 시스템 CMS 구축</p>
                 <time>May, 2017</time>
                 <span>~</span>
                 <time>Sep, 2017</time>
-                <p>
-                    - react.js <br />
-                    - redux
-                </p>
             </li>
             <li>
                 <p>2018 평창 올림픽 및 패럴림픽 웹 사이트 구축</p>
                 <time>Dec, 2016</time>
                 <span>~</span>
                 <time>May, 2017</time>
-                <p>
-                    - jquery <br />
-                    - jsp
-                </p>
             </li>
         </ul>
     </article>
