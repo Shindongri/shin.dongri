@@ -11,6 +11,7 @@
     font-weight: 700;
     justify-content: flex-end;
     text-transform: uppercase;
+    flex-wrap: wrap;
   }
   a {
     color: inherit;

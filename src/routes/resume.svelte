@@ -7,9 +7,10 @@
     }
     address {
         max-width: 1100px;
-        display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+    }
+    a + a {
+      margin-left: 5%;
     }
     @media (max-width: 1020px) {
         figure {
@@ -42,7 +43,7 @@
         <h2>Skills</h2>
         <ul>
             <li>
-              <b>Languages</b>: HTML, CSS, Javascript, Typescript, Pug, Sass, SCSS
+              <b>Languages</b>: HTML5, CSS3, Javascript, Typescript, Pug, Sass, SCSS
             </li>
             <li>
                 <b>Web Front-end Skill Set</b>: React, Vue, Nuxt, Next, Webpack, Babel
@@ -51,10 +52,10 @@
                 <b>Server-Side</b>: Node.js, Express, Sequelize, Mongoose
             </li>
             <li>
-                <b>Cloud</b>: AWS EC2 / lambda / RDS / Cloud-Front / S3 / Code Pipeline / Code Build
+                <b>Cloud</b>: AWS EC2, lambda, RDS, Cloud-Front, S3, Code Pipeline, Code Build
             </li>
             <li>
-              <b>Etc</b> : Github Actions CI / CD
+              <b>Etc</b> : Github Actions CI/CD
             </li>
         </ul>
     </article>
@@ -94,14 +95,14 @@
             : 차주를 위한 대고객 대출 플랫폼 (<a href="https://loan.terafunding.com/">https://loan.terafunding.com/</a>)
           </small>
           <ul>
-            <li>Nuxt(MPA) + Typescript</li>
+            <li>Nuxt + Typescript</li>
             <li>Global State Machine : Vuex</li>
             <li>Zeplin, Storybook 을 활용한 디자이너와의 협업</li>
             <li>Git Flow 방식의 코드 리뷰 진행</li>
             <li>CSS Pre-processor : Sass, Scss</li>
             <li>BEM (Block Element Modifier) Naming Rule 도입</li>
             <li>Template Engine : Pug</li>
-            <li>CI / CD : Github Actions</li>
+            <li>CI/CD : Github Actions</li>
           </ul>
         </li>
 
@@ -111,14 +112,14 @@
             : 부동산 P2P 투자자를 위한 대고객 투자 플랫폼 (<a href="https://terafunding.com/">https://terafunding.com/</a>)
           </small>
           <ul>
-            <li>Nuxt(MPA)</li>
+            <li>Nuxt</li>
             <li>Global State Machine : Vuex</li>
             <li>Git Flow 방식의 코드 리뷰 진행</li>
             <li>Zeplin, Storybook 을 활용한 디자이너와의 협업</li>
             <li>CSS Pre-processor : Sass, Scss</li>
-            <li>BEM (Block Element Modifier) Naming Rule 도입</li>
+            <li>BEM(Block Element Modifier) Naming Rule 도입</li>
             <li>Template Engine : Pug</li>
-            <li>CI / CD : AWS Code-Build, Code Pipeline</li>
+            <li>CI/CD : AWS Code-Build, Code Pipeline</li>
           </ul>
         </li>
       </ul>
@@ -126,7 +127,7 @@
       <p>
           <b>
             Web Developer /
-            <a href="https://www.i-on.net/index.html">I-ON</a>
+            <a href="https://www.i-on.net/index.html">I-ON Communications</a>
           </b>
         </p>
         <time datetime="2016-12-19">Dec, 2016</time>
@@ -137,9 +138,9 @@
             <b>CMS(Contents Managament System) 개발</b>
           </li>
           <ul>
-            <li>React(SPA), Next(MPA)</li>
+            <li>React, Next</li>
             <li>Global State Machine : Redux, MobX</li>
-            <li>Middleware : Redux Thunk</li>
+            <li>Middleware : Redux Thunk, Redux-Saga</li>
             <li>UI Framework : Ant Design</li>
             <li>CI : Jenkins</li>
           </ul>
@@ -185,34 +186,49 @@
         <h2>Projects</h2>
         <ul>
             <li>
-                <p>SBDC 중소기업청 동반성장몰 (폐쇄몰 ) 구축</p>
-                <time>Sep, 2018</time>
-                <span>~</span>
-                <time>Feb, 2019</time>
+                <p>SBDC 중소기업청 동반성장몰(폐쇄몰) 구축</p>
+                <div>
+                  <time>Sep, 2018</time>
+                  <span>~</span>
+                  <time>Feb, 2019</time>
+                </div>
+                <small>I-ON Communications</small>
             </li>
             <li>
                 <p>소상인들의 웹사이트 제작 서비스 - Just10 ( Saas )</p>
-                <time>June, 2018</time>
-                <span>~</span>
-                <time>Sep, 2018</time>
+                <div>
+                  <time>June, 2018</time>
+                  <span>~</span>
+                  <time>Sep, 2018</time>
+                </div>
+                <small>I-ON Communications</small>
             </li>
             <li>
                 <p>CJ Digital Music Mwave 시스템 구축</p>
-                <time>Sep, 2017</time>
-                <span>~</span>
-                <time>June, 2018</time>
+                <div>
+                  <time>Sep, 2017</time>
+                  <span>~</span>
+                  <time>June, 2018</time>
+                </div>
+                <small>I-ON Communications</small>
             </li>
             <li>
                 <p>SBS 방송 시스템 CMS 구축</p>
-                <time>May, 2017</time>
-                <span>~</span>
-                <time>Sep, 2017</time>
+                <div>
+                  <time>May, 2017</time>
+                  <span>~</span>
+                  <time>Sep, 2017</time>
+                </div>
+                <small>I-ON Communications</small>
             </li>
             <li>
                 <p>2018 평창 올림픽 및 패럴림픽 웹 사이트 구축</p>
-                <time>Dec, 2016</time>
-                <span>~</span>
-                <time>May, 2017</time>
+                <div>
+                  <time>Dec, 2016</time>
+                  <span>~</span>
+                  <time>May, 2017</time>
+                </div>
+                <small>I-ON Communications</small>
             </li>
         </ul>
     </article>
