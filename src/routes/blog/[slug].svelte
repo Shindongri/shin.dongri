@@ -15,6 +15,7 @@
 
 <script>
   import Bio from '../../components/Bio.svelte'
+  import Utteranc from '../../components/Utteranc.svelte'
   export let post
 </script>
 
@@ -38,15 +39,6 @@
     min-width: 100px;
     width: 30%;
   }
-
-  .utterances {
-    width: 100%;
-  }
-
-  .utterances-frame {
-    width: 100%;
-  }
-
 </style>
 
 <svelte:head>
@@ -65,7 +57,5 @@
   <hr />
   <Bio />
   <hr />
-  <div class="utterances">
-    <iframe class="utterances-frame"></iframe>
-  </div>
+  <Utteranc />
 </div>
