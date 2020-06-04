@@ -19,7 +19,7 @@
 </style>
 
 <div>
-  <img src="me2.png" alt="Dong-ri, Shin">
+  <img src="avatar4.png" alt="Dong-ri, Shin">
   <p>
     Hi, I'm <strong>Dong-ri</strong>.
     <br /> I'm a web front-end engineer from Seoul, Korea.

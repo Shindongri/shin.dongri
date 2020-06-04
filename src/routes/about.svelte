@@ -1,8 +1,8 @@
 <style>
   figure {
-    float: right;
-    margin: -3em -7em 2em 2em;
-    max-width: 400px;
+    float: left;
+    margin: 0 2em 2em 0;
+    max-width: 300px;
   }
   figure img {
     border-radius: 8px;
@@ -25,7 +25,7 @@
 <div class="container">
   <h3>About</h3>
   <figure>
-    <img src='me.png' alt="It's me">
+    <img src='/avatar3.png' alt="It's me">
     <figcaption>
       <a href="https://shindongri.dev/resume" target="_blank">resume</a>&nbsp;/
       <a href="https://www.linkedin.com/in/shindongri/" target="_blank">linkedin</a>&nbsp;/
@@ -34,7 +34,7 @@
       <a href="https://www.instagram.com/shindongri/" target="_blank">instagram</a>
     </figcaption>
   </figure>
-  <p>안녕하세요! 신동리 입니다. 🤓</p>
+  <p>안녕하세요! <b>신동리</b> 입니다. 🤓</p>
   <h6>work</h6>
   <p>현재 핀테크 기업인 <a href="https://terafunding.com" target="_blank">테라펀딩</a>에서
     <br />
@@ -45,10 +45,9 @@
   <p>
     항상 아름다운 인터페이스와 사용자 경험을 제공하기 위해 고민하고, 개발자로서 성장이 최우선의 가치라 여기고 있습니다.
   </p>
+  <br />
   <h6>worth</h6>
-  <p>
-    <i>"느끼는 것이 우선이기에 사물의 논리에 메인 자들은 절대로 오롯이 입맞춤하지 못하리라."</i>
-  </p>
+  <p>"느끼는 것이 우선이기에 사물의 논리에 메인 자들은 절대로 오롯이 입맞춤하지 못하리라."</p>
   <p>
     E.E.Cummings 시의 한 구절을 삶의 모토로 삼고 있습니다.
     <br />매사에 새로운 시도를 두려워하지 않고, 호기심을 끝까지 잃지 않는 것이 목표 입니다.

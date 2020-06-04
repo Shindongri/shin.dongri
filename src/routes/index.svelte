@@ -92,7 +92,7 @@
 
 <div class="home-container">
   <div class="home-copy">
-    <img src="avatar.png" alt="It's also me" />
+    <img src="avatar2.png" alt="It's also me" />
     <p>Hi, I'm</p>
     <h3>Dong-ri, Shin</h3>
     <p>I'm a web front-end engineer based in Seoul, Korea.</p>
