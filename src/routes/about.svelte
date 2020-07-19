@@ -36,7 +36,7 @@
   </figure>
   <p>안녕하세요! <b>신동리</b> 입니다. 🤓</p>
   <h6>work</h6>
-  <p>현재 핀테크 기업인 <a href="https://terafunding.com" target="_blank">테라펀딩</a>에서
+  <p>현재 <a href="https://hyperconnect.com/" target="_blank">하이퍼커넥트</a>에서
     <br />
     Web Front-end Engineer 로
     <br />
