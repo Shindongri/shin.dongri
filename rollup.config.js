@@ -38,7 +38,6 @@ export default {
 			svelte({
 				emitCss: true,
 				compilerOptions: {
-					generate: 'ssr',
 					hydratable: true,
 					customElement: false
 				}
@@ -67,7 +66,6 @@ export default {
 		],
 		onwarn,
 	},
-
 	server: {
 		input: config.server.input(),
 		output: config.server.output(),
@@ -81,17 +79,15 @@ export default {
 					generate: 'ssr'
 				}
 			}),
-			resolve({ browser: true }),
+			resolve(),
 			commonjs(),
 			markdown()
 		],
 		external: Object.keys(pkg.dependencies).concat(
 			require('module').builtinModules || Object.keys(process.binding('natives'))
 		),
-
 		onwarn,
 	},
-
 	serviceworker: {
 		input: config.serviceworker.input(),
 		output: config.serviceworker.output(),
@@ -104,7 +100,6 @@ export default {
 			commonjs(),
 			!dev && terser()
 		],
-
 		onwarn,
 	}
 };
