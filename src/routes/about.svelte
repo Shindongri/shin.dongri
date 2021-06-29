@@ -36,7 +36,7 @@
   </figure>
   <p>안녕하세요! <b>신동리</b> 입니다. 🤓</p>
   <h6>work</h6>
-  <p>현재 <a href="https://hyperconnect.com/" target="_blank">하이퍼커넥트</a>에서 Front-end Web Developer 로 근무하고 있습니다.</p>
+  <p>현재 <a href="https://hyperconnect.com/" target="_blank">하이퍼커넥트</a>에서 Frontend Web Developer 로 근무하고 있습니다.</p>
   <p>
     항상 아름다운 인터페이스와 사용자 경험을 제공하기 위해 고민하고, 개발자로서 성장이 최우선의 가치라 여기고 있습니다.
   </p>

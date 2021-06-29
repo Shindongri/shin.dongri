@@ -95,7 +95,7 @@
     <img src="avatar2.png" alt="It's also me" />
     <p>Hi, I'm</p>
     <h3>Dong-ri, Shin</h3>
-    <p>I'm a front-end web developer based in Seoul, Korea.</p>
+    <p>I'm a frontend web developer based in Seoul, Korea.</p>
     <p><a href="https://github.com/Shindongri" target="_blank">GitHub</a></p>
   </div>
 </div>

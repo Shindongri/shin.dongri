@@ -22,7 +22,7 @@
   <img src="avatar4.png" alt="Dong-ri, Shin">
   <p>
     Hi, I'm <strong>Dong-ri</strong>.
-    <br /> I'm a front-end web developer from Seoul, Korea.
+    <br /> I'm a frontend web developer from Seoul, Korea.
     <br />
     <a href="https://www.linkedin.com/in/shindongri/" target="_blank">linkedin</a>&nbsp;/
     <a href="https://twitter.com/JUpshyX4wTl5hqw" target="_blank">twitter</a>&nbsp;/
