@@ -18,7 +18,7 @@ Parallel Queries & Dependent Queries
 
 `useQuery` 와 `useInfiniteQuery`를 나란히 선언하면 자동으로 병렬로 쿼리가 실행된다.
 
-```
+```jsx
  function App () {
    // The following queries will execute in parallel
    const usersQuery = useQuery('users', fetchUsers)
@@ -38,7 +38,7 @@ Parallel Queries & Dependent Queries
 
 대신 React Query는 `useQueries`라는 훅을 제공해서 동적으로 병렬 쿼리를 구성하여 실행할 수 있다.
 
-```
+```jsx
 function App({ users }) {
    const userQueries = useQueries(
      users.map(user => {
@@ -57,7 +57,7 @@ function App({ users }) {
 
 이 같은 처리를 하려면 아래와 같이 `enabled` 옵션으로 쿼리가 실행될 준비가 되었을 때를 알리면 된다.
 
-```
+```jsx
  // Get the user
  const { data: user } = useQuery(['user', email], getUserByEmail)
  

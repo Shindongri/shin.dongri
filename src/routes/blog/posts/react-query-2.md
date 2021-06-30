@@ -23,7 +23,7 @@ Queries & Query Keys
     - Promise.resolve()
     - 오류 발생 (Throws an error)
 
-```
+```jsx
  import { useQuery } from 'react-query'
  
  function App() {
@@ -37,7 +37,7 @@ Queries & Query Keys
 
 `useQuery`에서 반환 된 **쿼리 결과(result)** 엔 템플릿 및 기타 데이터 사용에 필요한 모든 정보가 포함된다.
 
-``` 
+```jsx
 const result = useQuery('todos', fetchTodoList);
 ```
 
@@ -60,7 +60,7 @@ React Query는 쿼리의 **고유한 키(unique key)** 를 기반으로 쿼리 �
 
 가장 단순한 형태의 쿼리 키는 문자열이다. 쿼리 키로 문자열이 전달되면 문자열을 사용하여 내부적으로 배열로 변환한다.
 
-```
+```jsx
 // A list of todos
  useQuery('todos', ...) // queryKey === ['todos']
  
@@ -79,7 +79,7 @@ React Query는 쿼리의 **고유한 키(unique key)** 를 기반으로 쿼리 �
 - 추가적인 파라미터가 있는 쿼리
     - 일반적으로 추가 옵션을 포함하는 객체를 전달한다.
     
-``` 
+```jsx
  // An individual todo
  useQuery(['todo', 5], ...)
  // queryKey === ['todo', 5]
@@ -100,7 +100,7 @@ React Query는 쿼리의 **고유한 키(unique key)** 를 기반으로 쿼리 �
 
 객체의 키 순서에 상관없이 아래의 쿼리는 모두 동일하게 간주 된다.
 
-```
+```jsx
  useQuery(['todos', { status, page }], ...)
  useQuery(['todos', { page, status }], ...)
  useQuery(['todos', { page, status, other: undefined }], ...)
@@ -112,7 +112,7 @@ React Query는 쿼리의 **고유한 키(unique key)** 를 기반으로 쿼리 �
 
 쿼리 키는 가져오는 데이터를 고유하게 설명하므로 **변경되는** 쿼리 함수에서 사용하는 모든 변수를 포함해야 한다.
 
-```
+```jsx
 function Todos({ todoId }) {
    const result = useQuery(['todos', todoId], () => fetchTodoById(todoId))
  }

@@ -14,7 +14,7 @@ Background Fetching Indicators
 **백그라운드** 에서 쿼리가 `refetching` 하고 있다는 인디케이터를 표시하고 싶을 수 있다.
 
 
-``` 
+```jsx
 function Todos() {
    const { status, data: todos, error, isFetching } = useQuery(
      'todos',
@@ -37,14 +37,13 @@ function Todos() {
      </>
    )
  }
-
 ```
 
 ## [로딩 상태를 전역으로 처리하기](https://react-query.tanstack.com/guides/background-fetching-indicators#displaying-global-background-fetching-loading-state)
 
 개별 쿼리 로딩상태 외에도 전역에서 로딩 상태 인디케이터를 표시하려면 `useIsFetching` 훅을 사용할 수 있다.
 
-```
+```jsx
 import { useIsFetching } from 'react-query'
  
  function GlobalLoadingIndicator() {
