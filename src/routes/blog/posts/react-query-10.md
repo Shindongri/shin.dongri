@@ -103,3 +103,86 @@ import { useInfiniteQuery } from 'react-query'
    )
  }
 ```
+
+## [무한 쿼리를 다시 가져와야 할 땐 어떻게 해야할까 ?](https://react-query.tanstack.com/guides/infinite-queries#what-happens-when-an-infinite-query-needs-to-be-refetched)
+
+무한 쿼리가 오래된(stale) 상태가 되서 다시 가져와야 하는 경우 처음부터 `순차적으로` 다시 가져온다.
+
+이렇게하면 기본 데이터가 변경되더라도 오래된(stale) 커서를 사용하지 않고, 잠재적으로 데이터가 중복되거나 건너뛸 일이 생기지 않는다.
+
+무한 쿼리의 결과가 `queryCache`에서 제거되면 페이지네이션은 처음부터 다시 시작된다.
+
+## [쿼리 함수에 커스텀 정보를 전달하려면 어떻게 해야할까 ?](https://react-query.tanstack.com/guides/infinite-queries#what-if-i-need-to-pass-custom-information-to-my-query-function)
+
+기본적으로 `getNextPageParam` 에서 반환된 변수가 쿼리 함수에 제공되지만, 때에 따라서 이를 재정의할 수 있다.
+
+`fetchNextPage` 함수에 커스텀 변수를 전달할 수 있으며 이는 기본 변수를 재정의한다.
+
+```jsx
+function Projects() {
+   const fetchProjects = ({ pageParam = 0 }) =>
+     fetch('/api/projects?cursor=' + pageParam)
+ 
+   const {
+     status,
+     data,
+     isFetching,
+     isFetchingNextPage,
+     fetchNextPage,
+     hasNextPage,
+   } = useInfiniteQuery('projects', fetchProjects, {
+     getNextPageParam: (lastPage, pages) => lastPage.nextCursor,
+   })
+ 
+   // Pass your own page param
+   const skipToCursor50 = () => fetchNextPage({ pageParam: 50 })
+ }
+```
+
+##[양방향 무한 스크롤을 구현하려면 어떻게 해야할까 ?](What if I want to implement a bi-directional infinite list)
+
+양방향 리스트는 `getPreviousPageParam`, `fetchPreviousPage`, `hasPreviousPage` 및 `isFetchingPreviousPage` 속성 및 함수를 사용하여 구현할 수 있다.
+
+```jsx
+useInfiniteQuery('projects', fetchProjects, {
+   getNextPageParam: (lastPage, pages) => lastPage.nextCursor,
+   getPreviousPageParam: (firstPage, pages) => firstPage.prevCursor,
+ })
+```
+
+##[페이지를 역순으로 보려면 어떻게 해야할까 ?](https://react-query.tanstack.com/guides/infinite-queries#what-if-i-want-to-show-the-pages-in-reversed-order)
+
+페이지를 역순으로 보길 원한다면 `page` 옵션을 사용할 수 있다.
+
+```jsx
+useInfiniteQuery('projects', fetchProjects, {
+   select: data => ({
+     pages: [...data.pages].reverse(),
+     pageParams: [...data.pageParams].reverse(),
+   }),
+ })
+```
+
+##[무한 쿼리를 수동으로 업데이트 하려면 어떻게 해야할까 ?](https://react-query.tanstack.com/guides/infinite-queries#what-if-i-want-to-manually-update-the-infinite-query)
+
+- 수동으로 첫 페이지 제거 :
+
+```jsx
+queryClient.setQueryData('projects', data => ({
+   pages: data.pages.slice(1),
+   pageParams: data.pageParams.slice(1),
+ }))
+```
+
+- 특정 페이지 제거 : 
+
+```jsx
+const newPagesArray = oldPagesArray?.pages.map((page) =>
+   page.filter((val) => val.id !== updatedId)
+ ) ?? []
+ 
+ queryClient.setQueryData('projects', data => ({
+   pages: newPagesArray,
+   pageParams: data.pageParams,
+ }))
+```
