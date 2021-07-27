@@ -1,5 +1,5 @@
 ---
-title: 「React Query」 06. Window Focus Refetching
+title: React Query：Window Focus Refetching
 
 date: "2021-06-30T00:00:00.000Z"
 ---

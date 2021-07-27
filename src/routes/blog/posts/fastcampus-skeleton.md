@@ -1,5 +1,5 @@
 ---
-title: 「패스트캠퍼스」 01-1. Skeleton Component
+title: 「패스트캠퍼스：가장 보통의 UI」 - Skeleton
 date: "2021-07-20T00:00:00.000Z"
 ---
 
@@ -84,6 +84,12 @@ Skeleton Component
 <br />
 
 <iframe src="https://codesandbox.io/embed/brave-payne-n4cir?fontsize=14&hidenavigation=1&theme=dark" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" title="brave-payne-n4cir" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+
+- `width`, `height` 을 prop 으로 제공할 수 있다. width, height 가 하나라도 포함되면 `display: block;` 을 선언한다.
+- `circle` 을 prop 으로 제공하여 `circle = true` 이면 `border-radius: 50%;` 을 선언하여 원형 요소로 표시한다.
+- `wave` 애니메이션을 적용한다.
+- `count` 을 prop 으로 제공하여 표시할 글자 숫자를 지정할 수 있다.
+- 로딩이 끝나면 바로 콘텐츠를 표시한다.
 
 ## 참고 📃
 

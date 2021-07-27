@@ -1,5 +1,5 @@
 ---
-title: 「React Query」 10. Infinite Queries
+title: React Query：Infinite Queries
 
 date: "2021-06-30T04:00:00.000Z"
 ---

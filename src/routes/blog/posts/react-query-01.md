@@ -1,5 +1,5 @@
 ---
-title: 「React Query」 01. Important Defaults
+title: React Query：Important Defaults
 date: "2021-06-27T00:00:00.000Z"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 「React Query」 14. Mutations
+title: React Query：Mutations
 
 date: "2021-07-07T00:00:00.000Z"
 ---

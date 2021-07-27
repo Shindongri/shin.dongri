@@ -1,5 +1,5 @@
 ---
-title: 「React Query」 11. Placeholder Query Data
+title: React Query：Placeholder Query Data
 
 date: "2021-07-02T00:00:00.000Z"
 ---

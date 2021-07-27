@@ -1,5 +1,5 @@
 ---
-title: 「React Query」 00. Overview
+title: React Query：Overview
 date: "2021-06-26T00:00:00.000Z"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 「React Query」 02. Queries & Query Keys
+title: React Query：Queries & Query Keys
 date: "2021-06-28T00:00:00.000Z"
 ---
 

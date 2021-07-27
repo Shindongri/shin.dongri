@@ -1,5 +1,5 @@
 ---
-title: 「React Query」 09. Paginated / Lagged Queries
+title: React Query：Paginated / Lagged Queries
 
 date: "2021-06-30T03:00:00.000Z"
 ---

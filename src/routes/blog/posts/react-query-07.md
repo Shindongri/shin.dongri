@@ -1,5 +1,5 @@
 ---
-title: 「React Query」 07. Disabling/Pausing Queries
+title: React Query：Disabling/Pausing Queries
 
 date: "2021-06-30T01:00:00.000Z"
 ---

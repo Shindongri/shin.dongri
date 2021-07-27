@@ -1,5 +1,5 @@
 ---
-title: 「React Query」 04. Parallel Queries & Dependent Queries
+title: React Query：Parallel Queries & Dependent Queries
 
 date: "2021-06-29T01:00:00.000Z"
 ---

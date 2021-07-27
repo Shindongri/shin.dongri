@@ -1,5 +1,5 @@
 ---
-title: 「React Query」 13. Prefetching
+title: React Query：Prefetching
 
 date: "2021-07-06T00:00:00.000Z"
 ---

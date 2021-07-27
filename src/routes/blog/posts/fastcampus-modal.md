@@ -1,5 +1,5 @@
 ---
-title: 「패스트캠퍼스」 01-2. Modal Component
+title: 「패스트캠퍼스：가장 보통의 UI」 - Modal
 date: "2021-07-20T01:00:00.000Z"
 ---
 
@@ -60,11 +60,26 @@ react-transition-group 은 리액트 컴포넌트에 **transition 효과를 쉽�
 
 ---
 
+
+## Use Case 🚸
+
+- 모달을 트리거하는 버튼을 클릭하여 모달을 노출시킨다.
+- 모달이 노출되면 모달 이외의 영역은 dimmed 처리된다.
+- 취소 버튼이나 dim 영역을 클릭하면 모달이 닫힌다.
+
+---
+
 ## 구현하기 👨🏻‍💻
 
 <br />
 
 <iframe src="https://codesandbox.io/embed/green-night-ewsts?fontsize=14&hidenavigation=1&theme=dark" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" title="modal" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+
+- [portal](https://ko.reactjs.org/docs/portals.html) 을 사용해서 특정 외부 DOM 노드로 모달 컴포넌트를 append 한다.
+- 모달로 표시할 컴포넌트를 [children](https://ko.reactjs.org/docs/glossary.html#propschildren) 으로 전달한다.
+- `isOpen` 을 prop 으로 전달 받아 모달 노출을 토글한다.
+- `onClose` 메소드를 prop 으로 전달 받아 dim 영역을 클릭하면 트리거 하게끔 한다.
+- react-transition-group 활용해서 모달 on&off 시 좀 더 부드러운 전환 효과를 내도록 한다.
 
 ## 참고 📃
 

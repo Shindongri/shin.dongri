@@ -1,5 +1,5 @@
 ---
-title: 「React Query」 12. Initial Query Data
+title: React Query：Initial Query Data
 
 date: "2021-07-05T00:00:00.000Z"
 ---
