@@ -150,7 +150,7 @@ useInfiniteQuery('projects', fetchProjects, {
  })
 ```
 
-##[페이지를 역순으로 보려면 어떻게 해야할까 ?](https://react-query.tanstack.com/guides/infinite-queries#what-if-i-want-to-show-the-pages-in-reversed-order)
+## [페이지를 역순으로 보려면 어떻게 해야할까 ?](https://react-query.tanstack.com/guides/infinite-queries#what-if-i-want-to-show-the-pages-in-reversed-order)
 
 페이지를 역순으로 보길 원한다면 `page` 옵션을 사용할 수 있다.
 
@@ -163,7 +163,7 @@ useInfiniteQuery('projects', fetchProjects, {
  })
 ```
 
-##[무한 쿼리를 수동으로 업데이트 하려면 어떻게 해야할까 ?](https://react-query.tanstack.com/guides/infinite-queries#what-if-i-want-to-manually-update-the-infinite-query)
+## [무한 쿼리를 수동으로 업데이트 하려면 어떻게 해야할까 ?](https://react-query.tanstack.com/guides/infinite-queries#what-if-i-want-to-manually-update-the-infinite-query)
 
 - 수동으로 첫 페이지 제거 :
 

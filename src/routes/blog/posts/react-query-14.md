@@ -85,7 +85,7 @@ Mutations
  }
 ```
 
-##[상태 재설정](https://react-query.tanstack.com/guides/mutations#resetting-mutation-state)
+## [상태 재설정](https://react-query.tanstack.com/guides/mutations#resetting-mutation-state)
 
 뮤테이션 요청에 대한 `error`, `data` 를 초기화할 필요가 생길 땐 `reset` 함수를 사용한다.
 
@@ -116,7 +116,7 @@ Mutations
  }
 ```
 
-##[사이드 이펙트](https://react-query.tanstack.com/guides/mutations#mutation-side-effects)
+## [사이드 이펙트](https://react-query.tanstack.com/guides/mutations#mutation-side-effects)
 
 `useMutation` 은 뮤테이션 라이프 사이클에서 쉽고 빠르게 사이드 이펙트를 수행할 수 있게끔 몇 가지 헬퍼 옵션을 갖는다.
 

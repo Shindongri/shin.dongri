@@ -51,7 +51,7 @@ function App({ users }) {
  } 
 ```
 
-# Dependent Queries
+## Dependent Queries
 
 종속(또는 직렬) 쿼리는 이전 쿼리의 실행이 마무리되어야 실행 될 수 있다.
 
