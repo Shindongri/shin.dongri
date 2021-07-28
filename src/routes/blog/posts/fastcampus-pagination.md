@@ -9,6 +9,8 @@ Pagination Component
 
 ## 페이지네이션(Pagination) 컴포넌트란 ? ◁ ▷
 
+![](https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2019/08/image6.png?w=1429&ssl=1)
+
 API 를 통해서 많은 양의 데이터를 가져와 화면에 렌더링해야 하는 경우 성능 문제를 야기할 수 있다.
 
 이 때 성능을 최적화하기 위한 다양한 방법 중 전통적인 방법으로 **페이지네이션(Pagination)** 이 있다.
@@ -53,5 +55,6 @@ API 를 통해서 많은 양의 데이터를 가져와 화면에 렌더링해야
 
 ## 참고 📃
 
+- https://blog.fossasia.org/implementing-pagination-with-retrofit-in-eventyay-attendee/
 - https://www.smashingmagazine.com/2007/11/pagination-gallery-examples-and-good-practices/
 - https://gist.github.com/mislav/622561

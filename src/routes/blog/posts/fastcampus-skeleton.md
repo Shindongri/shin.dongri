@@ -9,6 +9,8 @@ Skeleton Component
 
 ## 스켈레톤 컴포넌트란 ? ☠️ 
 
+![](https://blog.prototyp.digital/content/images/size/w2000/2020/03/Blog---Blog-post--Implementing-Skeleton-Loading-in-React.png)
+
 웹에서 페이지 로드 시간이 짧은 것처럼 보이게 하는 몇 가지 방법들이 있다.
 
 스켈레톤 컴포넌트는 그 방법 중에 하나로서 데이터가 로드되기 전에 콘텐츠의 placeholder 를 표시해서 **유저가 기다리는 시간을 덜 지루하게 느끼게끔 하는 UI** 이다.
@@ -93,6 +95,7 @@ Skeleton Component
 
 ## 참고 📃
 
+- https://blog.prototyp.digital/implementing-skeleton-loading-in-react/
 - https://betterprogramming.pub/build-a-skeleton-component-in-react-for-better-ux-b1dca9d783e6
 - https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a
 - https://juneuprising.medium.com/designing-for-the-appearance-of-speed-aaabc7f568c2

@@ -9,6 +9,8 @@ Modal Component
 
 ## 모달 (Modal) 컴포넌트란 ? 🪟
 
+![](https://miro.medium.com/max/700/1*EcX_1ReJ7Uzcomal0IvFZA.png)
+
 모달 컴포넌트는 기본 window 위에 presenting 하여 띄우는 방식이다. 
 
 모달 컴포넌트 아래의 window 는 비활성 상태이기 때문에 유저가 활성된 Modal 창 외부의 콘텐츠와 인터페이스 할 수 없다.
@@ -83,6 +85,7 @@ react-transition-group 은 리액트 컴포넌트에 **transition 효과를 쉽�
 
 ## 참고 📃
 
+- https://uxplanet.org/best-practices-for-modals-overlays-dialog-windows-c00c66cddd8c
 - https://reactjs.org/docs/portals.html
 - https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal
 - https://reactcommunity.org/react-transition-group/
