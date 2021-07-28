@@ -7,6 +7,6 @@ Tree View Component
 
 <!-- more -->
 
-## Use Case 🚸
+## Use Cases 🚸
 
 ## 구현하기 👨🏻‍💻

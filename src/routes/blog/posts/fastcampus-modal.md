@@ -61,7 +61,7 @@ react-transition-group 은 리액트 컴포넌트에 **transition 효과를 쉽�
 ---
 
 
-## Use Case 🚸
+## Use Cases 🚸
 
 - 모달을 트리거하는 버튼을 클릭하여 모달을 노출시킨다.
 - 모달이 노출되면 모달 이외의 영역은 dimmed 처리된다.

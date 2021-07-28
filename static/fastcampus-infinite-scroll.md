@@ -8,6 +8,6 @@ Infinite Scroll Component by Scroll
 <!-- more -->
 
 
-## Use Case 🚸
+## Use Cases 🚸
 
 ## 구현하기 👨🏻‍💻
